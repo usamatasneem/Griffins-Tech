@@ -7,16 +7,16 @@ import Navbar from "./Navbar";
 import NavbarTwo from "./NavbarTwo";
 
 export default function Layout({ children }) {
-	const router = useRouter();
+  const router = useRouter();
 
-	return (
-		<>
-			{router.pathname === "/index-three" ? <NavbarTwo /> : <Navbar />}
-			<main>{children}</main>
-			{router.pathname === "/index-two" ? <FooterTwo /> : <Footer />}
+  return (
+    <>
+      {router.pathname === "/index-three" ? <Navbar /> : <NavbarTwo />}
+      <main>{children}</main>
+      {router.pathname === "/index-two" ? <FooterTwo /> : <Footer />}
 
-			<ScrollUp />
-			<Preloader />
-		</>
-	);
+      <ScrollUp />
+      <Preloader />
+    </>
+  );
 }

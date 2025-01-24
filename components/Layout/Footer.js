@@ -23,9 +23,8 @@ export default function Footer() {
                     </a>
                   </Link>
                   <p>
-                    Xmoze helps millions of people get the best Wordpress theme
-                    design and offers software reviews, ratings, comprehensive
-                    services.
+                    Griffins Tech offers innovative, user-friendly, and secure
+                    website solutions tailored to your needs.
                   </p>
                 </div>
               </div>
@@ -36,27 +35,27 @@ export default function Footer() {
                 data-wow-delay=".2s"
               >
                 <div className="widget-title">
-                  <h5>Company</h5>
+                  <h5>Other Pages</h5>
                 </div>
                 <ul>
                   <li>
                     <Link href="/about">
-                      <a>About xmoze</a>
+                      <a>About</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services">
+                      <a>Services</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/portfolio">
+                      <a>Portfolio</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact">
-                      <a>Contact & support</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/#">
-                      <a>Setting & privacy</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <a>Setting & privacy</a>
+                      <a>Contact</a>
                     </Link>
                   </li>
                 </ul>
@@ -72,23 +71,33 @@ export default function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <Link href="#">
-                      <a>Incident responder</a>
+                    <Link href="/services/web-development">
+                      <a>Web Development</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
-                      <a>Secure managed IT</a>
+                    <Link href="/services/web-maintenance">
+                      <a>Web Maintenance</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
-                      <a>Check website Url</a>
+                    <Link href="/services/ecommerce-store">
+                      <a>Ecommerce Store</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
-                      <a>Locker security</a>
+                    <Link href="/services/api-integration">
+                      <a>API Integration</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/landing-pages-building">
+                      <a>Landing Pages Building</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/performance-optimization">
+                      <a>Performance Optimization</a>
                     </Link>
                   </li>
                 </ul>
@@ -104,25 +113,20 @@ export default function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <Link href="#">
-                      <a>Payment plans</a>
+                    <Link href="/blogs">
+                      <a>Blogs</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="#">
-                      <a>Blogs & guides</a>
+                      <a>FAQs</a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#">
-                      <a>Premium support</a>
+                      <a>Our Products</a>
                     </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <a>Our products</a>
-                    </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -138,9 +142,9 @@ export default function Footer() {
               data-wow-duration="1s"
             >
               <p>
-                &copy; 2022{" "}
+                &copy; 2025{" "}
                 <Link href="#">
-                  <a>Xmooze Theme</a>
+                  <a>GriffinsTech</a>
                 </Link>{" "}
                 All Rights Reserved.
               </p>
@@ -150,26 +154,26 @@ export default function Footer() {
               data-wow-delay=".3"
               data-wow-duration="1s"
             >
-              <Link href="#">
+              <Link href="https://www.fb.com/griffinstech">
                 <a>
                   <FaFacebookF />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="https://www.twitter.com/griffinstech">
                 <a>
                   <FaTwitter />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/griffinstech">
                 <a>
                   <FaInstagram />
                 </a>
               </Link>
-              <Link href="#">
+              {/* <Link href="https://www.linkedin.com/griffinstech">
                 <a>
                   <FaLinkedinIn />
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

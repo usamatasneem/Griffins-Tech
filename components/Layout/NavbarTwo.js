@@ -4,7 +4,7 @@ import { FaBars, FaTimesCircle } from "react-icons/fa";
 import MenuItems from "./Menu/MenuItems";
 import { menuItems } from "./menuItems";
 
-export default function NavbarTwo() {
+export default function NavbarTwo({ service }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="header-1 style-2">
@@ -22,11 +22,12 @@ export default function NavbarTwo() {
               </Link>
             </div>
           </div>
-          <div className="col-lg-10 text-end p-lg-0 d-none d-lg-flex justify-content-between align-items-center">
+          <div className="col-lg-10 text-end p-lg-0 d-none d-lg-flex justify-content-center align-items-center">
             <div className="menu-wrap">
               <div className="main-menu">
                 <ul>
-                  <li>
+                  {/* ---------------------Home 1, Home 2, Home 3--------------------- */}
+                  {/* <li>
                     <a href="#">demos</a>
                     <ul className="sub-menu">
                       <li>
@@ -45,21 +46,56 @@ export default function NavbarTwo() {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
+                  {/* ---------------------Home 1, Home 2, Home 3--------------------- */}
                   <li>
                     <Link href="/about">
                       <a>About</a>
                     </Link>
                   </li>
                   <li>
-                    {" "}
                     <Link href="/services">
                       <a>Services</a>
                     </Link>
-                  </li>
-                  <li>
-                    <a href="#">Pages</a>
                     <ul className="sub-menu">
+                      <li>
+                        <Link href="/services/web-development">
+                          <a>Web Development</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/services/web-maintenance">
+                          <a>Web Maintenance</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/services/ecommerce-store">
+                          <a>Ecommerce Store</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/services/api-integration">
+                          <a>API Integration</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/services/landing-pages-building">
+                          <a>Landing Pages Building</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/services/performance-optimization">
+                          <a>Performance Optimization</a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="/projects">Portfolios</a>
+                    {/* Demos Pages like faq, team, portfolio, pricing, 404 are commented out */}
+
+                    {/* <ul className="sub-menu">
                       <li>
                         <Link href="/faq">
                           <a>faq</a>
@@ -85,7 +121,8 @@ export default function NavbarTwo() {
                           <a>404</a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
+                    {/* Demos Pages like faq, team, portfolio, pricing, 404 are commented out */}
                   </li>
                   <li>
                     <Link href="/news">
@@ -101,7 +138,7 @@ export default function NavbarTwo() {
               </div>
             </div>
             <div className="header-right-element text-white">
-              <a href="#">login</a>
+              {/* <a href="#">login</a> */}
               <Link href="/contact">
                 <a className="theme-btn black">get started</a>
               </Link>

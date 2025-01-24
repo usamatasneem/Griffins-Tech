@@ -143,3 +143,79 @@ export default function servicesDetails() {
 		</>
 	);
 }
+
+// import Head from "next/head";
+// import PageBanner from "../../components/Common/PageBanner";
+// import servicesData from "../../serviceDataJson.json"; // Import JSON data
+
+// export async function getStaticPaths() {
+//   // Generate dynamic paths for each service
+//   const paths = servicesData.map((service) => ({
+//     params: { slug: service.slug }, 
+//   }));
+
+//   return { paths, fallback: false };  // fallback false ensures only existing pages are generated
+// }
+
+// export async function getStaticProps({ params }) {
+//   // Find the specific service based on slug
+//   const service = servicesData.find((s) => s.slug === params.slug);
+
+//   // Handle case if service not found
+//   if (!service) {
+//     return { notFound: true };
+//   }
+
+//   return {
+//     props: { service },
+//   };
+// }
+
+// export default function ServiceDetails({ service }) {
+//   return (
+//     <>
+//       <Head>
+//         <title>{service.title} - Service Details</title>
+//       </Head>
+
+//       <PageBanner title={service.title} content={service.content} />
+
+//       <section className="services-details-wrapper section-padding">
+//         <div className="container">
+//           <div className="col-lg-10 col-12 offset-lg-1">
+//             <div className="services-contents">
+//               <img src={service.image} alt={service.title} />
+
+//               <p className="mt-4">
+//                 <b>{service.description}</b>
+//               </p>
+
+//               <div className="work-process-wrapper row fw500">
+//                 {service.features.map((feature, index) => (
+//                   <div className="col-xl-4 col-md-6 text-center" key={index}>
+//                     <div className="single-work-process">
+//                       <div className="icon">{index + 1}</div>
+//                       <div className="content">
+//                         <h5>{feature.title}</h5>
+//                         <p>{feature.description}</p>
+//                       </div>
+//                     </div>
+//                   </div>
+//                 ))}
+//               </div>
+
+//               <p className="mt-4"><b>Benefits of {service.title}</b></p>
+//               <ul>
+//                 {service.benefits.map((benefit, index) => (
+//                   <li key={index}>
+//                     <b>{benefit.title}: </b> {benefit.description}
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//     </>
+//   );
+// }

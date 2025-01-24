@@ -13,9 +13,12 @@ export default function Navbar() {
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-2 col-sm-5 col-md-4 col-6">
             <div className="logo">
-              <Link href="/">
+              <Link href="/index-three">
                 <a>
-                  <img src="/img/griffins-logo-orignal.svg" alt="Xmooze" />
+                  <img
+                    src="/img/griffins-logo-orignal.svg"
+                    alt="GriffinsTech"
+                  />
                 </a>
               </Link>
             </div>
@@ -25,8 +28,10 @@ export default function Navbar() {
               <div className="main-menu">
                 <ul>
                   <li>
-                    <a href="#">demos</a>
-                    <ul className="sub-menu">
+                    {/* ---------------------Home 1, Home 2, Home 3--------------------- */}
+                    {/*<a href="#">demos</a>
+
+                     <ul className="sub-menu">
                       <li>
                         <Link href="/">
                           <a>Home 1</a>
@@ -42,7 +47,8 @@ export default function Navbar() {
                           <a>Home 3</a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
+                    {/* ---------------------Home 1, Home 2, Home 3--------------------- */}
                   </li>
                   <li>
                     <Link href="/about">
@@ -56,8 +62,9 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <a href="#">Pages</a>
-                    <ul className="sub-menu">
+                    <a href="/projects">Portfolio</a>
+                    {/* Demos Pages like faq, team, portfolio, pricing, 404 are commented out */}
+                    {/* <ul className="sub-menu">
                       <li>
                         <Link href="/faq">
                           <a>faq</a>
@@ -83,7 +90,8 @@ export default function Navbar() {
                           <a>404</a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
+                    {/* Demos Pages like faq, team, portfolio, pricing, 404 are commented out */}
                   </li>
                   <li>
                     <Link href="/news">
@@ -99,7 +107,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="header-right-element text-white">
-              <a href="#">login</a>
+              {/* <a href="#">login</a> */}
               <Link href="/contact">
                 <a className="theme-btn black">get started</a>
               </Link>
